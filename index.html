@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/harmony3.jpeg">
     <link rel="stylesheet" href="style.css">
@@ -24,7 +26,7 @@
                     <img src="assets/harmony4.webp">
                 </div>
                 <div class="logo-info">HARMONY</div>
-    
+
             </div>
             <div class="nav">
                 <div class="nav-option">
@@ -86,12 +88,12 @@
             </div>
             <h2>Recently played</h2>
             <div class="cards-container">
-                <div class="card">
-                    <img src="assets/card1img.jpeg">
+                <div class="card" data-aos="fade-up">
+                    <img src="./assets/card1img.jpeg">
                     <P class="card-tittle">Top 50-Global</P>
                     <p class="card-info">Your daily updates of the most played tracks...</p>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <img src="assets/card5img.jpeg">
                     <P class="card-tittle">Top 50-Global</P>
                     <p class="card-info">Your daily updates of the most played tracks...</p>
@@ -204,6 +206,13 @@
                 <div class="control-icons"> <i class="fa-regular fa-file-image"></i></div>
             </div>
             <script src="app.js"></script>
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script>
+                AOS.init({
+                    offset: 100
+                });
+            </script>
 </body>
+
 
 </html>
