@@ -6,46 +6,55 @@ body {
     overflow: hidden;
 }
 
-.main {
+.wish {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
     display: flex;
     height: 100vh;
     padding: 0.5rem;
 }
-.logo{
-    height:5.5rem;
-    width:100%;
-    border-radius:1rem;
-    margin-top:1rem;
-    display:flex;
-}
-.logo img{
-    height:90%;
-    width:90%;
-    opacity:0.8;
-    border-radius:1rem;
-    object-fit: cover;
-    
-}
-.logo img:hover{
-    opacity:1;
-    width:100%;
-    transition:1s;
+
+.logo {
+    height: 4rem;
+    width: 100%;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    display: flex;
 }
 
-.logo-info{
-    margin-top:1.1rem;
-    margin-left:2rem;
-    font-weight:600;
-    font-size:2rem;
-    color:transparent;
+.logo img {
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    border-radius: 0.8rem;
+    object-fit: cover;
+
+}
+
+.logo img:hover {
+    opacity: 1;
+    width: 100%;
+    transition: 1s;
+}
+
+.logo-info {
+    margin-top: 1.1rem;
+    margin-left: 2rem;
+    font-weight: 600;
+    font-size: 2rem;
+    color: transparent;
     background: linear-gradient(#ff00d2, #fed90f, #00a2ff, #09f1b8, #ff00d2, #fed90f, #09f1b8, #ff00d2, #fed90f, #09f1b8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 300% 300%;
     animation: abhay 2s ease-in-out infinite;
-    -webkit-text-stroke:1px goldenrod;
-    letter-spacing:4px;
+    -webkit-text-stroke: 1px goldenrod;
+    letter-spacing: 4px;
 }
+
 @keyframes abhay {
     0% {
         background-position: 0% 50%;
@@ -63,11 +72,13 @@ body {
 
     ;
 }
+
 .slidebar {
     background-color: #121212;
-    width: 340px;
+    width: 330px;
     border-radius: 1rem;
 }
+
 .main-content {
     background-color: #121212;
     flex: 1;
@@ -147,6 +158,7 @@ a {
 
 .options {
     display: flex;
+    position: sticky;
     align-items: center;
     justify-content: space-between;
 }
@@ -165,11 +177,11 @@ a {
 }
 
 .box {
-    height: 8rem;
+    height: 6rem;
     border-radius: 0.75rem;
     background-color: #232323;
-    margin-top: 1.4rem;
-    padding: 0.75rem 1rem;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
     opacity: 0.8;
 }
 
@@ -225,9 +237,10 @@ a {
     justify-content: space-between;
     z-index: 1;
 }
-.animation:hover{
-background-color:#c6282841;
-transition:3s;
+
+.animation:hover {
+    background-color: #c6282841;
+    transition: 3s;
 }
 
 .sticky-nav-icons {
@@ -294,6 +307,10 @@ transition:3s;
     opacity: 0.7;
 }
 
+h2 {
+    margin-top: 0.5rem;
+}
+
 .card1:hover {
     opacity: 0.7;
 }
@@ -324,7 +341,7 @@ transition:3s;
     animation: gradient 2s ease-in-out infinite;
     width: 350px;
     font-size: 2rem;
-    margin-left:35rem;
+    margin-left: 35rem;
 }
 
 @keyframes gradient {
@@ -548,7 +565,7 @@ transition:3s;
     opacity: 0.6;
 }
 
-.pause-icon {
+#picon {
     height: 2rem;
 
 }
@@ -575,4 +592,24 @@ transition:3s;
 
 .control-icons:hover {
     opacity: 1;
+}
+
+#cursor {
+    height: 5rem;
+    width: 5rem;
+    background-color: #ff5f83;
+    border-radius: 50%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    transform: translate(-50%,-50%);
+    align-items: center;
+}
+
+#cursor h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding-left: 1rem;
+    color: #232323;
+    padding-top: 0.4rem
 }

@@ -6,7 +6,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/harmony3.jpeg">
+    <link rel="icon" href="assets/harmony4.webp">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
@@ -19,7 +19,10 @@
 </head>
 
 <body>
-    <div class="main">
+    <div id="main">
+        <div id="cursor">
+            <h2 title="text">play music</h2>
+        </div>
         <div class="slidebar">
             <div class="logo">
                 <div class="logo-img">
@@ -41,7 +44,7 @@
             <div class="library">
                 <div class="options">
                     <div class="lib-option">
-                        <img src="assets/library_icon - Shortcut.lnk">
+                        <img src="assets/library_icon.png">
                         <a href="#">Your Library</a>
                     </div>
                     <div class="icons">
@@ -67,7 +70,7 @@
             <div class="sticky-nav">
                 <div class="sticky-nav-icons">
                     <img src="assets/backward_icon.png">
-                    <img src="assets/forward_icon - Shortcut.lnk" class="hide">
+                    <img src="assets/forward_icon.png" class="hide">
                 </div>
                 <div class="sticky-nav-options">
                     <button class="badge hide">Explore Premium</button>
@@ -88,12 +91,12 @@
             </div>
             <h2>Recently played</h2>
             <div class="cards-container">
-                <div class="card" data-aos="fade-up">
+                <div class="card">
                     <img src="./assets/card1img.jpeg">
                     <P class="card-tittle">Top 50-Global</P>
                     <p class="card-info">Your daily updates of the most played tracks...</p>
                 </div>
-                <div class="card" data-aos="fade-up">
+                <div class="card">
                     <img src="assets/card5img.jpeg">
                     <P class="card-tittle">Top 50-Global</P>
                     <p class="card-info">Your daily updates of the most played tracks...</p>
@@ -167,6 +170,30 @@
                     <P class="card-tittle">Honey singh</P>
                     <p class="card-info">Artist...</p>
                 </div>
+            </div><br> <br> <br>
+            <br> <br>
+            <h2>International songs </h2>
+            <div class="cards-container">
+                <div class="card1">
+                    <img src="assets/alan.jpeg">
+                    <P class="card-tittle">Justin bieber</P>
+                    <p class="card-info">Artist...</p>
+                </div>
+                <div class="card1">
+                    <img src="assets/eminem.avif">
+                    <P class="card-tittle">Eminem</P>
+                    <p class="card-info">Artist...</p>
+                </div>
+                <div class="card1">
+                    <img src="assets/alanwalker1.jpeg">
+                    <P class="card-tittle">David gueeta</P>
+                    <p class="card-info">Artist...</p>
+                </div>
+                <div class="card1">
+                    <img src="assets/2pac.avif">
+                    <P class="card-tittle">2pac</P>
+                    <p class="card-info">Artist...</p>
+                </div>
             </div>
             <div class="footer">
                 <div class="line"></div>
@@ -188,7 +215,7 @@
                 <div class="player-control">
                     <img src="assets/player_icon1.png" class="player-control-icons">
                     <img src="assets/player_icon2.png" class="player-control-icons">
-                    <img src="assets/player_icon3.png" class="pause-icon">
+                    <img src="assets/player_icon3.png" id="picon">
                     <img src="assets/player_icon4.png" class="player-control-icons">
                     <img src="assets/player_icon5.png" class="player-control-icons">
                 </div>
@@ -205,13 +232,21 @@
                 <div class="control-icons"><i class="fa-brands fa-playstation"></i></div>
                 <div class="control-icons"> <i class="fa-regular fa-file-image"></i></div>
             </div>
+            <audio src="mp 4.mp3">
+            </audio>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"
+                integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"
+                integrity="sha512-LQQDtPAueBcmGXKdOBcMkrhrtqM7xR2bVrnMtYZ8ImAZhFlIb5xrMqQ6uZviyeSB+4mYj89ta8niiCIQM1Gj0w=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
             <script src="app.js"></script>
-            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
             <script>
                 AOS.init({
                     offset: 100
                 });
-            </script>
+            </script> -->
 </body>
 
 
